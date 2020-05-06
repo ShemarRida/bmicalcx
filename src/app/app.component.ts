@@ -11,11 +11,8 @@ export class AppComponent {
   heightM: number;
   bmiMetric: number;
 
-constructor() { }
-
-
-bodyMassMetric(): number{
-  return this.bmiMetric = this.weightKG / (this.heightM = this.heightM);
+bodyMassMetric(){
+   this.bmiMetric = this.weightKG / Math.pow(this.heightM/100,2)
 }
 
 }

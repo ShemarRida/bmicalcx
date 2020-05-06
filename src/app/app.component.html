@@ -1,13 +1,19 @@
+
 <div class="bg-danger text-yellow">
   <h1>BMI Calculator</h1>
 </div>
 <form>
-  <label for="weightKG">Weight(kg)</label>
-  <input [(NgModel)]="weightKG" type="number" id="weightKG" name="kilograms">
- 
-<label for="heightM">Height(cm)</label>
-  <input [(NgModel)]="heightM" type="number" id="heightM" name="centimeters">
-  <button (bodyMassMetric)="bodyMassMetric()" type="button" class="btn btn-danger">calculate</button>
+  <div class="form-group">
+    <label for="weightKG">Weight(kg)</label>
+    <input [(ngModel)]="weightKG" type="number" id="weightKG" name="kilograms" class="form-control">
+    <br>
+  </div>
+  <div class="form-group">
+    <label for="heightM">Height(cm)</label>
+  <input [(ngModel)]="heightM" type="number" id="heightM" name="centimeters">
+ <br>
+ <button (click)="bodyMassMetric()" type="button" class="btn btn-danger">calculate</button>
   <div>{{bmiMetric}}</div>
-
+  </div>
 </form>
+<router-outlet></router-outlet>
