@@ -88,9 +88,13 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_module/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "BMICalculatorx"
+    }
+  },
+  "defaultProject": "BMICalculatorx",
+  "cli": {
+    "analytics": "62c80de6-bb20-46e1-bbe6-3d53b2fba6d5"
+  }
 }

@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'BMICalculatorx';
+  weightKG: number;
+  heightM: number;
+  bmiMetric: number;
+
+constructor() { }
+
+
+bodyMassMetric(): number{
+  return this.bmiMetric = this.weightKG / (this.heightM = this.heightM);
+}
+
 }
